@@ -1,64 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Padhle</title>
-  <style>
-    body{
-        background-color: rgb(53, 60, 66);
-    }
-    button {
-     background-color: wheat;
-     font-size: 2rem;
-     border: 1px solid black;
-     border-radius: 20px;
-     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     padding: 1em 1em;
-     cursor: pointer;
-     margin-top: 1em;
-    }
-    .countdown {
-      color: burlywood;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-
-    }
-    .countdown .days {
-      font-size: 10em;
-    }
-    .countdown .hours{
-        font-size: 7em;
-    }
-    .countdown .left{
-        font-size: 4em;
-    }
-
-  </style>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
   <div class="countdown">
     <div class="days"></div>
     <div class="hours"></div>
     <div class="left">Left for JEE-Mains</div>
   </div>
-  <script>
-    let endDate = new Date("2024-01-22T09:00:00Z");
-    let now = new Date();
-    let remainingTime = endDate - now;
+  <button value="butt" class="butt" onclick="window.location.href = 'boards.html'">Boards</button>
+  <br><br>
+  <hr>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Notes" Id="not"
+      style="width:25em; height: 5em; margin-top: 50px;font-size: 2em;"></textarea>
+    <br><button value="sub" id="sub" class="sub">Submit</button>
+  </div>
 
-    function updateCountdown() {
-      let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-      let hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-      let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+  <div id="Notes" class="my4">
+    <h2>Notes</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">SNO</th>
+          <th scope="col">Note</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td><button class="dlt">delete</button></td>
+        </tr>
 
-      document.querySelector(".days").innerHTML = days+" Days";
-      document.querySelector(".hours").innerHTML = hours+" Hr "+minutes+" Min ";
-      
-    }
-    
-    setInterval(updateCountdown, 1000);
-  </script>
-  <button value="butt" onclick="window.location.href = 'boards.html'">Boards</button>
+      </tbody>
+
+    </table>
+  </div>
 </body>
+
 </html>
