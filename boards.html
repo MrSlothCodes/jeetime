@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Padhle</title>
+  <style>
+    button {
+     background-color: wheat;
+     font-size: 2rem;
+     border: 1px solid black;
+     border-radius: 20px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     padding: 1rem 1rem;
+     cursor: pointer;
+     margin-top: 1em;
+    }
+    body{
+        background-color: rgb(53, 60, 66);
+    }
+    .countdown {
+      color: burlywood;
+      font-family: "Comic sans MS";
+
+    }
+    .countdown .days {
+      font-size: 10em;
+    }
+    .countdown .hours{
+        font-size: 7em;
+    }
+    .countdown .left{
+        font-size: 4em;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="countdown">
+    <div class="days"></div>
+    <div class="hours"></div>
+    <div class="left">Left For Boards 24</div>
+  </div>
+  <script>
+    let endDate = new Date("2024-01-26T09:00:00Z");
+    let now = new Date();
+    let remainingTime = endDate - now;
+
+    function updateCountdown() {
+      let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+      document.querySelector(".days").innerHTML = days+" Days";
+      document.querySelector(".hours").innerHTML = hours+" Hr "+minutes+" Mins ";
+      
+    }
+    
+    setInterval(updateCountdown, 1000);
+  </script>
+  <button value="butt" onclick="window.location.href = 'index.html'"> JEE-M  </button>
+</body>
+</html>
