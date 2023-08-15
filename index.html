@@ -70,9 +70,10 @@
     sub = document.getElementById('sub');
     note = document.getElementById('not').value;
 
-    console.log(note)
+    
     sub.addEventListener("click", () => {
-
+      note = document.getElementById('not').value;
+      console.log(note)
       console.log("Zzz");
 
       if (localStorage.getItem('itemsJson') == null) {
