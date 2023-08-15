@@ -26,7 +26,7 @@
 
   <div id="Notes" class="my4">
     <h2>Notes</h2>
-    <table class="table">
+    <table class="table" >
       <thead>
         <tr>
           <th scope="col">SNO</th>
@@ -34,7 +34,7 @@
           <th scope="col">Action</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="tbody">
         <tr>
           <th scope="row">1</th>
           <td>Mark</td>
@@ -74,17 +74,31 @@
       console.log(note)
       console.log("Zzz");
 
-      if (localStorage.getItem('itemsJson') == null) {
+      if (localStorage.getItem('itemsJson1') == null) {
         itemJsonArray = [];
         itemJsonArray.push([note]);
-        localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+        localStorage.setItem('itemsJson1', JSON.stringify(itemJsonArray))
       }
       else {
-        itemJsonArrayStr = localStorage.getItem('itemsJson')
+        itemJsonArrayStr = localStorage.getItem('itemsJson1')
         itemJsonArray = JSON.parse(itemJsonArrayStr);
         itemJsonArray.push([note]);
-        localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+        localStorage.setItem('itemsJson1', JSON.stringify(itemJsonArray))
       }
+
+      //imperginating the table
+      tbody=document.getElementById('tbody')  
+      let str = "";
+      itemJsonArray.forEach((element , index)=> {
+        str += `
+        <tr>
+          <th scope="row">${index+1}</th>
+          <td>${element[0]}</td>
+          <td><button class="dlt">delete</button></td>
+        </tr>
+        `
+      });
+      tbody.innerHTML = str ;
     })
 
   </script>

@@ -35,7 +35,7 @@
           <th scope="col">Action</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="tbody">
         <tr>
           <th scope="row">1</th>
           <td>Mark</td>
@@ -70,7 +70,7 @@
     sub = document.getElementById('sub');
     note = document.getElementById('not').value;
 
-    
+
     sub.addEventListener("click", () => {
       note = document.getElementById('not').value;
       console.log(note)
@@ -88,8 +88,25 @@
         localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
 
       }
-    })
 
+      tbody = document.getElementById('tbody')
+    let str = "";
+    itemJsonArray.forEach((element, index) => {
+      str += `
+        <tr>
+          <th scope="row">${index + 1}</th>
+          <td>${element[0]}</td>
+          <td><button class="dlt">delete</button></td>
+        </tr>
+        `
+    });
+    tbody.innerHTML = str;
+    })
+   
+   
+    //imperginating the table
+  
+   
   </script>
 
 </body>
