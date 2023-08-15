@@ -7,6 +7,16 @@
     body{
         background-color: rgb(53, 60, 66);
     }
+    button {
+     background-color: wheat;
+     font-size: 2rem;
+     border: 1px solid black;
+     border-radius: 20px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     padding: 1rem 1rem;
+     cursor: pointer;
+     margin-top: 1em;
+    }
     .countdown {
       color: burlywood;
       font-family: "Comic sans MS";
@@ -32,7 +42,7 @@
     <div class="left">Left for JEE-Mains</div>
   </div>
   <script>
-    let endDate = new Date("2024-01-26T09:00:00Z");
+    let endDate = new Date("2024-01-22T09:00:00Z");
     let now = new Date();
     let remainingTime = endDate - now;
 
@@ -49,6 +59,6 @@
     
     setInterval(updateCountdown, 1000);
   </script>
-  
+  <button value="butt" onclick="window.location.href = 'boards.html'">Boards</button>
 </body>
 </html>
