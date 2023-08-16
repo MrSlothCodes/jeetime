@@ -1,65 +1,45 @@
 body {
-    background-color: rgb(53, 60, 66);
+  background-color: rgb(53, 60, 66);
+  color: burlywood;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  }
+button 
+{
+  background-color: wheat;
+  color: black;
+  border: 1px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1em 1em;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 1em;
+  font-size: 1rem;
+}
 
-  .butt {
-    background-color: wheat;
-    font-size: 2rem;
-    border: 1px solid black;
-    border-radius: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 1em 1em;
-    cursor: pointer;
-    margin-top: 1em;
-  }
-  .sub
-  {
-    background-color: wheat;
-    font-size: 1rem;
-    border: 1px solid black;
-    border-radius:10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 1em 1em;
-    cursor: pointer;
-    margin-top: 1em;
-  }
-  .sub
-  {
-    background-color: wheat;
-    font-size: 1rem;
-    border: 1px solid black;
-    border-radius:10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 1em 1em;
-    cursor: pointer;
-    margin-top: 1em;
-  }
-  .dlt
-  {
-    background-color: wheat;
-    font-size:0.75rem;
-    border-radius:5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 1em 1em;
-    cursor: pointer;
-    
-  }
+.butt
+{
+  font-size: 1.5rem;
+  border-radius: 20px;
+}
 
-  .countdown {
-    color: burlywood;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.countdown
+{
+  font-size: 5em;
+}
 
-  }
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
 
-  .countdown .days {
-    font-size: 10em;
-  }
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
 
-  .countdown .hours {
-    font-size: 7em;
-  }
 
-  .countdown .left {
-    font-size: 4em;
-  }
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
