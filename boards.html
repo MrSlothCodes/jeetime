@@ -62,45 +62,64 @@
 
     }
     setInterval(updateCountdown, 1000);
-
     //notesss
+    function update() {
+      if (localStorage.getItem('itemsJson') == null) {
+        itemJsonArray = [];
+        localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+      }
+      else
+      {
+        itemJsonArrayStr = localStorage.getItem('itemsJson');                        
+        itemJsonArray = JSON.parse(itemJsonArrayStr);
+      }
+      //imperginating  the table
+      tbody = document.getElementById('tbody')
+      let str = "";
+      itemJsonArray.forEach((element, index) => {
+        str += `
+    <tr>
+      <th scope="row">${index + 1}</th>
+      <td>${element[0]}</td>
+      <td><button class="dlt" onclick="dele(${index})">delete</button></td>
+    </tr>
+    `
+   
+      });
+      tbody.innerHTML = str;
 
-    sub = document.getElementById('sub');
-    note = document.getElementById('not').value;
-
-    
-    sub.addEventListener("click", () => {
+    }
+    function getAndUpdate()
+    {
       note = document.getElementById('not').value;
       console.log(note)
-      console.log("Zzz");
+      console.log("Zzz  ");
 
-      if (localStorage.getItem('itemsJson1') == null) {
+      if (localStorage.getItem('itemsJson') == null) {
         itemJsonArray = [];
         itemJsonArray.push([note]);
-        localStorage.setItem('itemsJson1', JSON.stringify(itemJsonArray))
+        localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
       }
       else {
-        itemJsonArrayStr = localStorage.getItem('itemsJson1')
+        itemJsonArrayStr = localStorage.getItem('itemsJson')
         itemJsonArray = JSON.parse(itemJsonArrayStr);
         itemJsonArray.push([note]);
-        localStorage.setItem('itemsJson1', JSON.stringify(itemJsonArray))
+        localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+
       }
-
-      //imperginating the table
-      tbody=document.getElementById('tbody')  
-      let str = "";
-      itemJsonArray.forEach((element , index)=> {
-        str += `
-        <tr>
-          <th scope="row">${index+1}</th>
-          <td>${element[0]}</td>
-          <td><button class="dlt">delete</button></td>
-        </tr>
-        `
-      });
-      tbody.innerHTML = str ;
-    })
-
+      update();
+    }
+    sub = document.getElementById('sub');
+    sub.addEventListener("click", getAndUpdate);
+    update();
+    function dele(itemIndex){
+      console.log("eureka",itemIndex);
+      itemJsonArrayStr = localStorage.getItem('itemsJson')
+      itemJsonArray = JSON.parse(itemJsonArrayStr);
+      itemJsonArray.splice(itemIndex,1)
+      localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+      update();
+    }
   </script>
 </body>
 
