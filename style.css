@@ -2,7 +2,6 @@ body
 {
     text-align: center;
     align-items: center;
-    justify-content: center;
     background-color:#202324;
     color:#BACFC9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -35,20 +34,27 @@ button
 }
 
 .ta
-{
+{   
+    width:90%
     margin-top: 50px;
     font-size: 2em;
-    width: 50%;
-    height: 5em;
     padding: 10px;
-    border-radius: 15px;
-
+    border-radius: 30px;
+    background-color: #1a1a1a;
+    color: #BACFC9;
+    position: fixed;
+    bottom: 30px;
+}
+.sub{
+    border-radius: 30px;
+    font-size: 1em;
+    position: fixed;
+    bottom: 30px;
 }
 
-
 .table {
-  display: flex;
     border-collapse: collapse;
+   align-items: center;
     width: 70%;
     justify-content: center;
   
