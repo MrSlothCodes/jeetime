@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Padhle</title>
-  <script src="script.js"></script>
+  <title>Countdown Timer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="countdown">
-    <div class="days"></div>
-    <div class="hours"></div>
-    <div class="left">Left for JEE-Mains</div>
+    <h1>Dooms Day Clock</h1>
+  <div class="jee">
+    JEE in 
+    <div class="clock"></div>
   </div>
-
-  <button value="Boards" class="butt" id="butt" onclick="window.location.href = 'boards.html'">Boards</button>
-
-  <div class="form-floating">
-    <textarea class="form-control" placeholder="Notes" Id="not"
-      style="width:15em; height: 5em; margin-top: 50px;font-size: 2em;"></textarea>
+  
+  <div class="Boards">
+    Boards in 
+    <div class="bclock"></div>
+  </div>
+  
+  <div class="table">
+    <textarea class="ta" placeholder="Notes" id="not"></textarea>
     <br><button value="sub" id="sub" class="sub">Submit</button>
   </div>
   <br>
+  
   <div id="Notes" class="my4">
     <h2>Notes</h2>
     <table class="table">
@@ -35,16 +35,14 @@
       </thead>
       <tbody id="tbody">
         <tr>
-          <th scope="row">1</th>
           <td>Mark</td>
           <td><button class="dlt">delete</button></td>
         </tr>
-
       </tbody>
 
     </table>
   </div>
-
+  
+  <script src="script.js"></script>
 </body>
-
 </html>

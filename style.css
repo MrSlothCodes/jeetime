@@ -1,45 +1,112 @@
-body {
-  background-color: rgb(15, 22, 22);
-  color:burlywood;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+body 
+{
+    text-align: center;
+    background-color: rgb(15, 22, 22);
+    color: burlywood;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jee
+{
+    font-size: 3em;
+    margin: 0 auto;
+
 }
 
 button 
 {
-  background-color:burlywood;
-  color: black;
-  border: 1px solid black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding: 1em 1em;
-  cursor: pointer;
-  border-radius: 10px;
-  margin-top: 1em;
-  font-size: 1rem;
+    background-color: burlywood;
+    color: black;
+    border: 1px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1em 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 1em;
+    font-size: 1rem;
 }
 
-.butt
+.clock 
 {
-  font-size: 1.5rem;
-  border-radius: 20px;
-}
-.dlt
-{
-  font-size: 0.75em;
+    font-size: 48px;
+    border: 10px;
+    border-color: burlywood;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.countdown
+.ta
 {
- 
-  font-size: 5em;
+    width: 15em;
+    height: 5em;
+    margin-top: 50px;
+    font-size: 2em;
+
+}
+
+.sub
+{
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.dlt 
+{
+    font-size: 1em;
 }
 
 table {
-  border-collapse: collapse;
-  border: 1px solid black;
-}
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+  }
 
-th, td {
-  border: 1px solid black;
-  padding: 10px;
-}
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+ 
+  .ta {
+    width: 50%;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+ 
+ 
+  .my4 {
+    margin-top: 4rem;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  
