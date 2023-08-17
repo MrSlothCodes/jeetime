@@ -1,69 +1,74 @@
-/* Common styles */
-body {
-  background-color: #202324;
-  color: #BACFC9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
+body 
+{
+    text-align: center;
+    align-items: center;
+    background-color:#202324;
+    color:#BACFC9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.jee
+{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+}
+.clock,.bclock{
+    margin-right: 1.5em;
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px;
+    background-color: #151617;
+}
+button 
+{
+    background-color: #151617;
+    color: #BACFC9;
+    padding: 1em 1em;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 1em;
+    font-size: 1rem;
+}
+
+.ta
+{   
+    width:75%;
+    margin-top: 50px;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #1a1a1a;
+    color: #BACFC9;
+    margin-bottom:50px;
+}
+.sub{
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+table {
+    border: 2px;
+    border-style: groove;
+    border-radius: 20px;
+    width: 80%;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+  
+  td {
+    
+    border-radius: 20px;
+    background-color: #1a1a1a;
+  }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-/* Responsive styles */
-@media (min-width: 768px) {
-  /* Styles for screens with width 768px or more */
-  .jee {
-    font-size: 4em;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
   }
-
-  .clock, .bclock {
-    margin-right: 1.5em;
-    padding: 20px;
-  }
-
-  .ta {
-    width: 50%;
-    margin-top: 20px;
-    font-size: 1.5em;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-  .table {
-    width: 60%;
-    font-size: 1.2em;
-  }
-}
-
-/* Styles for smaller screens (e.g., mobile devices) */
-@media (max-width: 767px) {
-  .jee {
-    font-size: 2.5em;
-  }
-
-  .clock, .bclock {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .ta {
-    width: 80%;
-    margin-top: 20px;
-    font-size: 1.2em;
-    padding: 8px;
-    margin-bottom: 20px;
-  }
-
-  .table {
-    width: 90%;
-    font-size: 1em;
-  }
-}
