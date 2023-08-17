@@ -1,38 +1,32 @@
 body 
 {
     text-align: center;
-    background-color: rgb(15, 22, 22);
-    color: burlywood;
+    background-color: darkslategrey;
+    color:silver;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.jee,.boards
+.jee
 {
     font-size: 3em;
-    margin: 0 auto;
-
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    
 }
-
+.clock{
+    margin-right: 1.5em;
+}
 button 
 {
-    background-color: burlywood;
+    background-color: coral;
     color: black;
-    border: 1px solid black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 1em 1em;
     cursor: pointer;
     border-radius: 10px;
     margin-top: 1em;
     font-size: 1rem;
-}
-
-.clock 
-{
-    font-size: 48px;
-    border: 10px;
-    border-color: burlywood;
-    border-radius: 10px;
-    text-align: center;
 }
 
 .ta
@@ -47,6 +41,7 @@ button
 
 .sub
 {
+    background-color: teal;
     font-size: 1rem;
     border-radius: 5px;
 }
@@ -60,14 +55,16 @@ table {
     border-collapse: collapse;
     border: 1px solid black;
     width: 100%;
+    color: coral;
   }
   
   th, td {
     border: 1px solid black;
     padding: 10px;
     text-align: center;
-  }
-
+    background-color: rgb(2, 87, 87);
+}
+ 
   h1 {
     font-size: 2rem;
     font-weight: 700;

@@ -10,7 +10,7 @@ function jee()
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-        return `${days}d <br>${hours}h ${minutes}m ${seconds}s`;
+        return `JEE in <br>${days}d <br>${hours}h ${minutes}m ${seconds}s`;
         }
 
         const clock = document.querySelector('.clock');
@@ -32,7 +32,7 @@ function boards()
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-        return `${days}d <br>${hours}h ${minutes}m ${seconds}s`;
+        return `Boards in <br>${days}d <br>${hours}h ${minutes}m ${seconds}s`;
         }
 
         const clock = document.querySelector('.bclock');
