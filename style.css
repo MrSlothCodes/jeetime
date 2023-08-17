@@ -6,7 +6,7 @@ body
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.jee
+.jee,.boards
 {
     font-size: 3em;
     margin: 0 auto;
@@ -37,10 +37,11 @@ button
 
 .ta
 {
-    width: 15em;
-    height: 5em;
     margin-top: 50px;
     font-size: 2em;
+    width: 50%;
+    height: 5em;
+    padding: 10px;
 
 }
 
@@ -58,11 +59,13 @@ button
 table {
     border-collapse: collapse;
     border: 1px solid black;
+    width: 100%;
   }
   
   th, td {
     border: 1px solid black;
     padding: 10px;
+    text-align: center;
   }
 
   h1 {
@@ -70,43 +73,3 @@ table {
     font-weight: 700;
     text-align: center;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
- 
-  .ta {
-    width: 50%;
-    height: 200px;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
- 
- 
-  .my4 {
-    margin-top: 4rem;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    text-align: center;
-    padding: 8px;
-  }
-
-  
