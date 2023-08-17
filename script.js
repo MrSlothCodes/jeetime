@@ -62,7 +62,7 @@ jee();
         itemJsonArray.forEach((element, index) => {
           str += `
       <tr>
-        <td>${element[0]}</td>
+         <td>${element[0]}</td>
         <td><button class="dlt" onclick="dele(${index})">delete</button></td>
       </tr>
       `
