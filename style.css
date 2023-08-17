@@ -2,7 +2,7 @@ body
 {
     text-align: center;
     background-color: darkslategrey;
-    color:silver;
+    color:tan;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,8 +19,8 @@ body
 }
 button 
 {
-    background-color: coral;
-    color: black;
+    background-color: teal;
+    color: black ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 1em 1em;
     cursor: pointer;
@@ -41,7 +41,7 @@ button
 
 .sub
 {
-    background-color: teal;
+    
     font-size: 1rem;
     border-radius: 5px;
 }
@@ -55,7 +55,7 @@ table {
     border-collapse: collapse;
     border: 1px solid black;
     width: 100%;
-    color: coral;
+    
   }
   
   th, td {
