@@ -1,3 +1,8 @@
+function clearTextBox() {
+  const textBox = document.getElementById("not");
+  textBox.value = "";
+}
+
 function jee()
 {
     const targetDate = new Date('2024-01-20 12:00:00');
@@ -91,9 +96,11 @@ jee();
       
         }
         update();
+        
       }
       sub = document.getElementById('sub');
       sub.addEventListener("click", getAndUpdate);
+      sub.addEventListener("click", clearTextBox);
       update();
       function dele(itemIndex){
         console.log("eureka",itemIndex);
@@ -102,4 +109,5 @@ jee();
         itemJsonArray.splice(itemIndex,1)
         localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
         update();
+;  
       }
