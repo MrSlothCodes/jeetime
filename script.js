@@ -109,5 +109,5 @@ jee();
         itemJsonArray.splice(itemIndex,1)
         localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
         update();
-;  
+ 
       }

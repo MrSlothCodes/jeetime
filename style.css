@@ -24,13 +24,14 @@ body
 }
 button 
 {
-    background-color: #151617;
+    background-color:#151617;
     color: #BACFC9;
     padding: 1em 1em;
     cursor: pointer;
     border-radius: 15px;
-    margin-top: 1em;
+    margin : 1em;
     font-size: 1rem;
+    border: none;
 }
 
 .ta
@@ -40,19 +41,23 @@ button
     font-size: 2em;
     padding: 10px;
     border-radius: 30px;
-    background-color: #1a1a1a;
+    background-color: rgb(27, 27, 30);
     color: #BACFC9;
     margin-bottom:50px;
+}
+
+days{
+    background-color: grey;
 }
 .sub{
     border-radius: 30px;
     font-size: 1em;
+    margin-left :10px;
+    margin-top: 20px;
+    padding-left: 1em;
 }
 
 table {
-    border: 2px;
-    border-style: groove;
-    border-radius: 20px;
     width: 80%;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -63,8 +68,9 @@ table {
   
   td {
     
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: #1a1a1a;
+
   }
 
 h1 {
@@ -72,3 +78,16 @@ h1 {
     font-weight: 700;
     text-align: center;
   }
+button:hover{
+    background-color: black;
+}
+.ta:not(:focus){
+    background-color:  #151617;
+    border: 0px;
+    
+}
+
+.ta:hover{
+    background-color: rgb(27, 27, 30);
+    
+}
