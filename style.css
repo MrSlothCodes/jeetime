@@ -13,7 +13,7 @@ body
     display: flex;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
+   
 }
 .clock,.bclock{
     margin-right: 1.5em;
