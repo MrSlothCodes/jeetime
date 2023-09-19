@@ -6,7 +6,7 @@ function clearTextBox() {
 
 function jee()
 {
-    const targetDate = new Date('2024-01-20 12:00:00');
+    const targetDate = new Date('2024-01-24 12:00:00');
 
         function getTimeLeft() {
         const now = new Date();
